@@ -12,17 +12,18 @@
 </button>
 
 
-<ul *ngIf="colegios.length > 0; else noHayColegios">
+<ul *ngIf="colegios.length > 0">
     <li *ngFor="let colegio of colegios; let i = index">
         {{ i + 1}} ----- {{ colegio }}
     </li>
 </ul>
 
-<ng-template #noHayColegios>
-    <div class="alert alert-warning" role="alert">
+
+    <div *ngIf="colegios.length === 0"
+        class="alert alert-warning" role="alert">
         No hay colegios
     </div>
-</ng-template>
+
 
 
 

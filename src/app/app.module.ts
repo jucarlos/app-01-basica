@@ -4,6 +4,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { ColegiosComponent } from './colegios/colegios.component';
+import { BorrarCompoenteComponent } from './borrar-compoente/borrar-compoente.component';
 
 
 
@@ -11,7 +12,8 @@ import { ColegiosComponent } from './colegios/colegios.component';
 @NgModule({
   declarations: [
     AppComponent,
-    ColegiosComponent
+    ColegiosComponent,
+    BorrarCompoenteComponent
 
   ],
   imports: [
